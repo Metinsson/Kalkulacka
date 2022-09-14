@@ -7,7 +7,7 @@
 #
 import math
 
-teleso = int(input("Vyber si těleso: čtverec[1] | obdélník[2] | kruh[3]: "))
+teleso = int(input("Vyber si těleso: čtverec[1] | obdélník[2] | kruh[3] | trojúhelník[4]: "))
 
 if teleso is 1:
     rozmerA = int(input("Zadej rozměr strany A[cm]: "))
@@ -22,3 +22,7 @@ elif teleso is 3:
     rozmerA = int(input("Zadej poloměr[r]=[cm]: "))
     print("Obvod kruhu o rozměrech [r]=", rozmerA,  " je", 2*math.pi*rozmerA, " cm")
     print("Obsah kruhu o rozměrech [r]=", rozmerA, " je", math.pi*rozmerA*rozmerA, " cm²")
+elif teleso is 4:
+    rozmerA = int(input("Zadej základnu[z]=[cm]: "))
+    rozmerB = int(input("Zadej výšku[v]=[cm]: "))
+    print("Obsah trojúhelníku o rozměrech [z]=", rozmerA, " a", rozmerb," je", (rozmerA*rozmerB)/2, " cm²")
